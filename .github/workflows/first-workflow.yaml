@@ -11,3 +11,9 @@ jobs:
         run: |
           node --version
           npm --version
+
+  Execture-Bash-Commands:
+    runs-on: macos-latest
+    steps:
+      - name: View Software Version
+        run: sw_vers
