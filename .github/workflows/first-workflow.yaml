@@ -7,3 +7,7 @@ jobs:
     steps:
       - name: echo string
         run: echo "Hello World"
+      - name: Check Verison
+        run: |
+          node --version
+          npm --version
