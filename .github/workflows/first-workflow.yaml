@@ -17,3 +17,12 @@ jobs:
     steps:
       - name: View Software Version
         run: sw_vers
+
+  Execute-PowerShell-Comands:
+    runs-on: windows-latest
+    needs: Execute-Shell-Comands
+    steps:
+      - name: echo "Good OS"
+        run: Write-Output "Yo Yo"
+      - name: Throw Error
+        run: Sladar Stun
